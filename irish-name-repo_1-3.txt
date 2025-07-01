@@ -9,7 +9,7 @@ so we get the flag as picoCTF{s0m3_SQL_f8adf3fb}
 
 
 IRISH-NAME-REPO-2:
-we can see the same thing working here too , i dont know what was improved , but our version is working here too 
+we can see the same thing working here too , i dont know what was improved , but our version is working here too , but if want to chckout on the query we can replace the debug value = 1 in the dev tools hidden form 
 username: ad'||'min
 password: ' is not '.
 we use ad'||'min as username bcuz admin is not to be enterd , and pasword creates a query such that in password thing becomes true by doing '' is not '.' which is true
@@ -18,3 +18,8 @@ so we get the flag as picoCTF{m0R3_SQL_plz_c34df170}
 
 
 IRISH-NAME-REPO-3:
+we can see the backend and raw sql by keeping debug value =1 by opening the dev tools
+after opening it and doing a test sample we can see that the passwors we entered is encrypted , the or is being converted to be 
+so we make a quesry in password such that it becomes true, hence , passwords :  a' be '1' = '1
+this goes to teh backend as a' or '1' = '1 which evaluates as true , hence loggin me in 
+the flag is  picoCTF{3v3n_m0r3_SQL_4424e7af}

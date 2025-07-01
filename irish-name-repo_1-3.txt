@@ -1,0 +1,9 @@
+IRISH-NAME-REPO-1:
+after seeing this page i open the admin login page  where i have to login as admin 
+so after experience from the web gauntlet , we try
+username: ad'||'min
+password: ' is not '.
+we use ad'||'min as username bcuz admin is not to be enterd , and pasword creates a query such that in password thing becomes true by doing '' is not '.' which is true
+so we get the flag as picoCTF{s0m3_SQL_f8adf3fb}
+
+IRISH-NAME-REPO-2:

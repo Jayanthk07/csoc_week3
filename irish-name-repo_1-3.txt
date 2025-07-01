@@ -6,4 +6,15 @@ password: ' is not '.
 we use ad'||'min as username bcuz admin is not to be enterd , and pasword creates a query such that in password thing becomes true by doing '' is not '.' which is true
 so we get the flag as picoCTF{s0m3_SQL_f8adf3fb}
 
+
+
 IRISH-NAME-REPO-2:
+we can see the same thing working here too , i dont know what was improved , but our version is working here too 
+username: ad'||'min
+password: ' is not '.
+we use ad'||'min as username bcuz admin is not to be enterd , and pasword creates a query such that in password thing becomes true by doing '' is not '.' which is true
+so we get the flag as picoCTF{m0R3_SQL_plz_c34df170}
+
+
+
+IRISH-NAME-REPO-3:

@@ -1,0 +1,16 @@
+so after opening this website it shows people using picobrowser can only acces this website, so i have to change the User-Agent header to manipulate it
+
+User-Agent: PicoBrowser
+
+now it appears like its using picobrowser
+
+now it says users from other websites wont work , then i wrote the Referer header to make it look like it is from same website ,by making it same as host
+
+Referer: mercury.picoctf.net:39114
+
+now it says peopla from 2018 can only acces the website
+so now i manipulate the Date header , aftet checking the format from the google
+
+Date: Tue, 29 Oct 2018 
+
+now it says it dont trust trackble ones

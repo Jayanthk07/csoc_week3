@@ -1,0 +1,4 @@
+INTRO TO BURP:
+here after opening the website i dont see anything special there ,csrf token i thought to do something but didnt get anywhere , so i decided to go one level more , i entered random credentials and forwarded the request, now
+in the 2nd stage it asked me for the otp , so i enterd a random otp , and in the request thing i though to remove it,as it was the last stage , so if we remove that thing , i thought we could bypass the authentication , 
+so tried removing it , and forwawrded the request , now i got the flag as   picoCTF{#0TP_Bypvss_SuCc3$S_b3fa4f1a}

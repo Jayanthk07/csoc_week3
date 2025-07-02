@@ -13,4 +13,16 @@ so now i manipulate the Date header , aftet checking the format from the google
 
 Date: Tue, 29 Oct 2018 
 
-now it says it dont trust trackble ones
+now it says it dont trust trackble ones, so we now modify a special header named DNT, by setting it to 1 , this request politely asks the website to not to track, which was enough for this challenge
+
+DNT:1
+
+now it says we should be from sweden , so we take a swedish ip from the internet and keep it to the X-Forwarded-For header , which makes it look like from sweded , again its just a lite one ,some websites may block it 
+
+X-Forwarded-For:102.177.146.0
+
+now it says if ur from sweden then why r u not accepting swedish , which is done by modifying the Accept-Language header, from google we can see that the swedish one will be like sv-SE
+
+Accept-Language: sv-SE,en;q=0.5
+
+after these modifications , i got the flag picoCTF{http_h34d3rs_v3ry_c0Ol_much_w0w_20ace0e4}

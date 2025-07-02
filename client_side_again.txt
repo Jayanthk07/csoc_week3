@@ -1,0 +1,23 @@
+CLIENT SIDE AGAIN:
+so after a lot of search in cntrl + u , i see the javascript to be suspicious , so i decided to copy it and beuatify it and check it , so in that script i see a variable _0x4b5b being used repeatedly to compare anything for authentication 
+so i decided to go through it , then i decided to check out for _0x4b5b(0x2) in the console which gave me "substring" which was useless , so i tried _0x4b5b(0x3), it gave picoCTF{ which seemed like teh answer , so i though to go forward
+then i tried 0x4,0x5,0x6,0x7,0x8 which eventually gave me the parts of the flag and i though to stop at 0x8 as it gave me password verified
+
+so showing the outputs by parts
+_0x4b5b(0x2)
+"substring"
+_0x4b5b(0x3)
+"picoCTF{"
+_0x4b5b(0x4)
+"not_this"
+_0x4b5b(0x5)
+"f49bf}"
+_0x4b5b(0x6)
+"_again_e"
+_0x4b5b(0x7)
+"this"
+_0x4b5b('0x8')
+"Password Verified" 
+
+
+now after combining them to get the flag we get      picoCTF{not_this_again_ef49bf}

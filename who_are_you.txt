@@ -26,3 +26,21 @@ now it says if ur from sweden then why r u not accepting swedish , which is done
 Accept-Language: sv-SE,en;q=0.5
 
 after these modifications , i got the flag picoCTF{http_h34d3rs_v3ry_c0Ol_much_w0w_20ace0e4}
+
+
+the final request looks like this 
+
+GET / HTTP/1.1
+Host: mercury.picoctf.net:39114
+User-Agent: PicoBrowser
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: sv-SE,en;q=0.5
+Referer: mercury.picoctf.net:39114
+Date: Tue, 29 Oct 2018 
+DNT:1
+X-Forwarded-For:102.177.146.0
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Cookie: {36113d35-16a3-4afa-86a1-8a268b2d0393}=value
+Upgrade-Insecure-Requests: 1
+Priority: u=0, i

@@ -95,5 +95,8 @@ E7 D3 F1 F9 27 63 83 5F D2 32 93 F1 5F 7F 67 EF
   so after anlysing headers of this thing we caan say how many numbers it needs to get rotated to get the correct image, 
   so after analysing , for some of them are direct ,  but some had multiple options , so after taking them all into account we get 36 possibilities , so i printed all 36 possiblities one by one usiing python and checked them all 
 
-  the python code :
+the python code gave me all possiblitites and and after checking all of them i got this as the key    "5108180345363640"
+
+after entering this i got a qr code , which i will upload, after scanning that , i got the flag which is picoCTF{066cad9e69c5c7e5d2784185c0feb30b}
+
 

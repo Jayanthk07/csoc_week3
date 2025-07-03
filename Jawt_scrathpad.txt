@@ -1,0 +1,14 @@
+JaWT Scratchpad:
+in this challange by its name i thought of to check for the json web tokens ,but i didnt get to see any of them in first page , so i logged into random name to get the jwt 
+after getting the jwt , i wentinto supertokens.com to decode it , after decoding i saw it to be a hsa256 encryption, i got to learn a lot about jwt
+so i changes the name there from random name to 'admin'
+and used that jwt to get into the site , but it didnt work  , so then i though about the signature , it must be somethhing about the signature , so then i tried bruteforce that signature using the john tool
+
+echo "jwt token"  >> jwt.txt
+john jw.txt --wordlist=rockyou.txt --format=HMAC-SHA256
+john jw.txt --show
+
+after this i got the signature to be ilovepico
+
+so then i went to the editor paster the signature which then undergoes base64 and then appending to other part and then sha256 is used on it , then i got my jwt which looked like this    eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiYWRtaW4ifQ.gtqDl4jVDvNbEe_JYEZTN19Vx6X9NNZtRVbKPBkhO-s
+so after pasting this token in the dev tools and then refreshiong it  , i got the flag as picoCTF{jawt_was_just_what_you_thought_1ca14548}

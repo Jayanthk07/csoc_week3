@@ -40,4 +40,4 @@ filtered list     or and true false union like = > < ; -- /* */ admin
         password: ' is not '.
         this generates a query like this    SELECT *FROM users WHERE username = 'ad'||'min' AND password = '' is not '.';
         this generates password is true as NULL is not equal to .
-        hence the flag is picoctf{}
+        hence the flag is picoCTF{k3ep_1t_sh0rt_30593712914d76105748604617f4006a}

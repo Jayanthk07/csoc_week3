@@ -12,3 +12,6 @@ after this i got the signature to be ilovepico
 
 so then i went to the editor paster the signature which then undergoes base64 and then appending to other part and then sha256 is used on it , then i got my jwt which looked like this    eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiYWRtaW4ifQ.gtqDl4jVDvNbEe_JYEZTN19Vx6X9NNZtRVbKPBkhO-s
 so after pasting this token in the dev tools and then refreshiong it  , i got the flag as picoCTF{jawt_was_just_what_you_thought_1ca14548}
+
+
+concept of jawt: it actually takes a payload encodes it to base64 and same with header ,and remove trailing = symbols ,append header payload in that b64, now it uses a secret key which is same for the server and does the signature in the hiven format of header,now it uses fhat secret key and does fhe signature now ,that is also encoded in b64 ,removed trailing = ,and appended to it in the last ,make it like a.b.c,now using our random username ,we bruteforce the secret key and tamper the payload as admin now we made a complete jwt of admin,now we used it for logging in as admin

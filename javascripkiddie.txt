@@ -161,4 +161,4 @@ after this i got the flag after scannnig the qr , which was picoCTF{59d5db659865
 
 
 
-u can see both the qrs in the same repository
+u can see both the qrs in the same repository,they are named as jsk1qr.png,jsk2qr.png
